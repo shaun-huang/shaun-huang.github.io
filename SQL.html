@@ -17,20 +17,21 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Navigation</b></h3>
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">← Go Back</a><br>
+    <h3 class="w3-padding-64"><b>Skills</b></h3>
   </div>
   <div class="w3-bar">
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a><br>
-    <br><a href="education.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Education</a><br>
-    <br><a href="work experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Work Experience</a> <br>
-    <br><a href="skill portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skill Showcase</a> 
+    <a href="Python.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Python</a><br>
+    <br><a href="SQL.html" onclick="w3_close()" class="w3-bar-item w3-button w3-white">SQL</a><br>
+    <br><a href="VBA.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">VBA</a> <br>
+    <br><a href="Tableau.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tableau</a> 
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Navigation</span>
+  <span>Skills</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -41,29 +42,56 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Hi, I'm Shaun.</b></h1>
+    <h1 class="w3-jumbo"><b>SQL</b></h1>
     <h1 class="w3-xxxlarge w3-text-blue"><b>Introduction</b></h1>
-    <hr style="width:50px;border:5px solid rgb(8, 99, 235)" class="w3-round">
+    <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
   </div>
   
-  <!-- Photo grid (modal) -->
+
+  <p>Visual Basic for Applications(VBA) allows Microsoft programs to communicate with each other based on events or actions that take place within those programs.  
+    This language is not only used in Office programs like Excel and PowerPoint, but also in programs like NotePad and Paint.
+    I adapted it to create macros in Microsoft Excel.
+  </p>
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Portfolio</b></h1>
+        <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+ 
+ <!-- Project Description -->
   <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+      <h4><b>Stock Report</b></h4>
+      <p>Created a VBA script that loop through all the stock for each table and return the following:
+        <li>ticker symbol</li>
+        <li>yearly price change</li>
+        <li>total stock volumn</li>
+        <li>a summary table with "Greatest % increase", "Greatest % Decrease" and "Greatest total volume"</li>
+      </p>
+    </div>
+ <!-- Photo grid (modal) -->
+    <div class="w3-half">
+      <img src="Resources/VBA Stock Report.PNG" style="width:100%" onclick="onClick(this)" alt="VBA - Stock Report">
+      <a href = https://www.github.com/shaun-huang/VBA-Stock-Report onclick="w3_open">VBA Stock Report</a>
     </div>
 
-    <div class="w3-half">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
   </div>
+ <!-- Project Description -->
+ <div class="w3-row-padding">
+    <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+    <div class="w3-half">
+      <h4><b>Chess Board</b></h4>
+      <p>Created a VBA script to populate the Chess Board provided with text-based chess pieces.
+        To create the board I used nested for loops, conditionals, mods, and formatting in VBA.
+      </p>
+    </div>
+ <!-- Photo grid (modal) -->
+    <div class="w3-half">
+      <img src="Resources/Chessboard.png" style="width:100%" onclick="onClick(this)" alt="VBA - Chess Board">
+    </div>
+
+  </div>
+
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -71,7 +99,6 @@ body {font-size:16px;}
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image">
       <p id="caption"></p>
-      <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
     </div>
   </div>
 

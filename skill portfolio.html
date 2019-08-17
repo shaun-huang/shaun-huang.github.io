@@ -19,18 +19,17 @@ body {font-size:16px;}
   <div class="w3-container">
     <h3 class="w3-padding-64"><b>Navigation</b></h3>
   </div>
-  <div class="w3-bar-block">
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
-    <a href="education.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Education</a> 
-    <a href="work experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Work Experience</a> 
-    <a href="skill portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skill Portfolio</a> 
-
+  <div class="w3-bar">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a><br>
+    <br><a href="education.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Education</a><br>
+    <br><a href="work experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Work Experience</a> <br>
+    <br><a href="skill portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skill Showcase</a> 
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
   <span>Navigation</span>
 </header>
 
@@ -42,19 +41,57 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Hi, I'm Shaun</b></h1>
+    <h1 class="w3-jumbo"><b>SKILLS</b></h1>
+
+  </div>
+  
+  <!-- Skill List in Two Columns -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <h1 class="w3-xxlarge w3-text-blue"><a href = "Python.html"><b>Python</b></a></h1>
+      <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+      <h1 class="w3-xxlarge w3-text-blue"><a href = "SQL.html"><b>SQL</b></a></h1>
+      <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+      <h1 class="w3-xxlarge w3-text-blue"><a href = "VBA.html"><b>VBA</b></a></h1>
+      <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+      <h1 class="w3-xxlarge w3-text-blue"><a href = "Python.html"><b>Optimization Modeling</b></a></h1>
+      <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+    </div>
+
+    <div class="w3-half">
+      <h1 class="w3-xxlarge w3-text-blue"><a href = "Tableau.html"><b>Tableau</b></a></h1>
+      <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+      <h1 class="w3-xxlarge w3-text-blue"><a href = "Python.html"><b>MongoDB</b></a></h1>
+      <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+      <h1 class="w3-xxlarge w3-text-blue"><a href = "Python.html"><b>HTML/CSS</b></a></h1>
+      <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+      <h1 class="w3-xxlarge w3-text-blue"><a href = "Python.html"><b>Lean Six Sigma</b></a></h1>
+      <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">    
+    </div>
   </div>
 
-  <div class="w3-container" id="Introduction" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Skill Portfolio</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
-    <p>You've reached my skill portfolio page.
-      </p>    
-    <p>
-      这是我的技能界面。
-     </p>
-  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"></a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+</script>
 
 </body>
-
 </html>
