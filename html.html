@@ -1,146 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Shaun Huang</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
-<body>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">← Go Back</a><br>
-    <h3 class="w3-padding-64"><b>Skills</b></h3>
-  </div>
-  <div class="w3-bar">
-    <a href="Python.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Python</a><br>
-    <br><a href="SQL.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SQL</a><br>
-    <br><a href="MongoDB.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">MongoDB</a><br>
-    <br><a href="html.html" onclick="w3_close()" class="w3-bar-item w3-button w3-white">HTML/CSS/JS</a><br>
-    <br><a href="VBA.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">VBA</a> <br>
-    <br><a href="Tableau.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tableau</a> 
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Skills</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>HTML/CSS/JavaScript</b></h1>
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Introduction</b></h1>
-    <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
-  </div>
-  
-
-  <p>Learned mainly through Data Analytics Bootcamp of USC, HTML/CSS/JavaScript is the programming language that I use to interact and develop websites for my data projects.
-    Functionalities that I have acquired include data visualization, web scraping, d3, connecting to database such as SQL and MongoDB, ect.
-  </p>
-
-    <!-- Header -->
-    <div class="w3-container" style="margin-top:80px" id="showcase">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Portfolio</b></h1>
-        <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
-
-  <!-- Project Description -->
- <div class="w3-row-padding">
-    <div class="w3-half">
-      <h4><b>UFO Sightings</b></h4>
-      <p><strong>highlights: html, css, JavaScript, d3</strong></p>
-    </div>
- <!-- Photo grid (modal) -->
-    <div class="w3-half">
-      <img src="Resources/UFO Sighting.PNG" style="width:100%" onclick="onClick(this)" alt="UFO Sightings">
-      <a href = https://github.com/shaun-huang/Javascript onclick="w3_open">UFO Sightings</a>
-    </div>
- <!-- Project Description -->
-  <div class="w3-row-padding">
-    <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
-    <div class="w3-half">
-      <h4><b>Web Scraping and Display in HTML</b></h4>
-      <p><strong>modules: BeautifulSoup, Pandas, Splinter, flask_PyMongo</strong></p>
-    </div>
- <!-- Photo grid (modal) -->
-    <div class="w3-half">
-      <img src="Resources/final_app_part1.png" style="width:100%" onclick="onClick(this)" alt="Display of Scraped Info">
-      <a href = https://github.com/shaun-huang/MongoDB-Web-Scraping onclick="w3_open">Webscraping and Flask Application</a>
-    </div>
- <!-- Project Description -->
- <div class="w3-row-padding">
-  <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
-  <div class="w3-half">
-    <h4><b>Belly Button Biodiversity</b></h4>
-    <p><strong>highlights: html,Javascript, dropdown, d3, plotly, JSON</strong></p>
-    <p>This is an interactive web based dashboard I built using Javascript. The data source is a JSON file included in the repository.</p>
-    <li>Sorted Bar Chart</li>
-    <li>Bubble Chart</li>
-    <li>Gauge Chart</li>
-    <li>Interactive Dropdown</li>
-  </div>
-<!-- Photo grid (modal) -->
-  <div class="w3-half">
-    <img src="Resources/plotly.png" style="width:100%" onclick="onClick(this)" alt="Display of Scraped Info">
-    <a href = https://github.com/shaun-huang/Plotly onclick="w3_open">Belly Button Biodiversity</a>
-  </div>
-
-  </div>
-
-
-  </div>
-
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-<!-- End page content -->
-</div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"></a></p></div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-
-</body>
+   <title>Shaun Huang</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+   <style>
+      body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+      body {font-size:16px;}
+      .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+      .w3-half img:hover{opacity:1}
+   </style>
+   <body>
+      <!-- Sidebar/menu -->
+      <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+         <br>
+         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+         <div class="w3-container">
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">← Go Back</a><br>
+            <h3 class="w3-padding-64"><b>Skills</b></h3>
+         </div>
+         <div class="w3-bar">
+            <a href="Python.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Python</a><br>
+            <br><a href="SQL.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SQL</a><br>
+            <br><a href="MongoDB.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">MongoDB</a><br>
+            <br><a href="html.html" onclick="w3_close()" class="w3-bar-item w3-button w3-white">HTML/CSS/JS</a><br>
+            <br><a href="VBA.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">VBA</a> <br>
+            <br><a href="Tableau.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tableau</a> 
+         </div>
+      </nav>
+      <!-- Top menu on small screens -->
+      <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+         <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+         <span>Skills</span>
+      </header>
+      <!-- Overlay effect when opening sidebar on small screens -->
+      <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+      <!-- !PAGE CONTENT! -->
+      <div class="w3-main" style="margin-left:340px;margin-right:40px">
+      <!-- Header -->
+      <div class="w3-container" style="margin-top:80px" id="showcase">
+         <h1 class="w3-jumbo"><b>HTML/CSS/JavaScript</b></h1>
+         <h1 class="w3-xxxlarge w3-text-blue"><b>Introduction</b></h1>
+         <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+      </div>
+      <p>Learned mainly through Data Analytics Bootcamp of USC, HTML/CSS/JavaScript is the programming language that I use to interact and develop websites for my data projects.
+         Functionalities that I have acquired include data visualization, web scraping, d3, connecting to database such as SQL and MongoDB, ect.
+      </p>
+      <!-- Header -->
+      <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-xxxlarge w3-text-blue"><b>Portfolio</b></h1>
+      <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+      <!-- Project Description -->
+      <div class="w3-row-padding">
+         <div class="w3-half">
+            <h4><b>UFO Sightings</b></h4>
+            <p><strong>highlights: html, css, JavaScript, d3</strong></p>
+         </div>
+         <!-- Photo grid (modal) -->
+         <div class="w3-half">
+            <img src="Resources/UFO Sighting.PNG" style="width:100%" onclick="onClick(this)" alt="UFO Sightings">
+            <a href = https://github.com/shaun-huang/Javascript onclick="w3_open">UFO Sightings</a>
+         </div>
+         <!-- Project Description -->
+         <div class="w3-row-padding">
+            <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+            <div class="w3-half">
+               <h4><b>Web Scraping and Display in HTML</b></h4>
+               <p><strong>modules: BeautifulSoup, Pandas, Splinter, flask_PyMongo</strong></p>
+            </div>
+            <!-- Photo grid (modal) -->
+            <div class="w3-half">
+               <img src="Resources/final_app_part1.png" style="width:100%" onclick="onClick(this)" alt="Display of Scraped Info">
+               <a href = https://github.com/shaun-huang/MongoDB-Web-Scraping onclick="w3_open">Webscraping and Flask Application</a>
+            </div>
+            <!-- Project Description -->
+            <div class="w3-row-padding">
+               <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+               <div class="w3-half">
+                  <h4><b>Belly Button Biodiversity</b></h4>
+                  <p><strong>highlights: html,Javascript, dropdown, d3, plotly, JSON</strong></p>
+                  <p>This is an interactive web based dashboard I built using Javascript. The data source is a JSON file included in the repository.</p>
+                  <li>Sorted Bar Chart</li>
+                  <li>Bubble Chart</li>
+                  <li>Gauge Chart</li>
+                  <li>Interactive Dropdown</li>
+               </div>
+               <!-- Photo grid (modal) -->
+               <div class="w3-half">
+                  <img src="Resources/plotly.png" style="width:100%" onclick="onClick(this)" alt="Display of Scraped Info">
+                  <a href = https://github.com/shaun-huang/Plotly onclick="w3_open">Belly Button Biodiversity</a>
+               </div>
+            <div class="w3-row-padding">
+               <hr style="width:50px;border:5px solid rgb(8, 171, 235)" class="w3-round">
+               <div class="w3-half">
+                  <h4><b>D3</b></h4>
+                  <p><strong>highlights: html,CSS, Javascript, d3, tooltip plotly, csv transition</strong></p>
+                  <p>This is an interactive web based chart I built using Javascript D3 library. The data source is a CSV file included in the repository.</p>
+                  <li>Labels with Click Events</li>
+                  <li>Mouse Over Tooltip</li>
+               </div>
+               <!-- Photo grid (modal) -->
+               <div class="w3-half">
+                  <img src="Resources/7-animated-scatter.gif" style="width:100%" onclick="onClick(this)" alt="Display of Scraped Info">
+                  <a href = https://github.com/shaun-huang/D3 onclick="w3_open">D3 Github Repository</a>
+               </div>   
+            </div>
+         </div>
+         <!-- Modal for full size images on click-->
+         <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+               <img id="img01" class="w3-image">
+               <p id="caption"></p>
+            </div>
+         </div>
+         <!-- End page content -->
+      </div>
+      <!-- W3.CSS Container -->
+      <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+         <p class="w3-right"></a></p>
+      </div>
+      <script>
+         // Script to open and close sidebar
+         function w3_open() {
+           document.getElementById("mySidebar").style.display = "block";
+           document.getElementById("myOverlay").style.display = "block";
+         }
+          
+         function w3_close() {
+           document.getElementById("mySidebar").style.display = "none";
+           document.getElementById("myOverlay").style.display = "none";
+         }
+         
+         // Modal Image Gallery
+         function onClick(element) {
+           document.getElementById("img01").src = element.src;
+           document.getElementById("modal01").style.display = "block";
+           var captionText = document.getElementById("caption");
+           captionText.innerHTML = element.alt;
+         }
+      </script>
+   </body>
 </html>
